@@ -14,7 +14,7 @@ api_key = os.getenv("GOOGLE_API_KEY")
 if not api_key:
  
     print("Warning: Using hardcoded API key. Set GOOGLE_API_KEY environment variable for production.")
-    api_key = "AIzaSyBOCW3mK9fqExal5FZfGxPmFF8fS4gxVq0" 
+    api_key = "GOOGLE_API_KEY" 
 
 try:
     client = genai.Client(api_key=api_key)
