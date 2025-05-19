@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".", // Defines the base directory for module resolution
+    "paths": {
+      "@/*": ["./src/*"] // Keep existing path alias
+    },
+    "jsx": "preserve", // Preserve JSX for Next.js/Babel to handle
+    "module": "ESNext", // Use modern module system
+    "moduleResolution": "node", // Standard module resolution strategy
+    "target": "ES2017", // Target modern JavaScript features
+    "lib": ["dom", "dom.iterable", "esnext"], // Include standard DOM and ESNext libraries
+    "allowJs": true, // Allow JavaScript files
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "strict": false, // Be less strict for JS projects (can be true for TS)
+    "forceConsistentCasingInFileNames": true, // Enforce consistent file casing
+    "noEmit": true, // Do not emit output files (handled by Next.js build)
+    "esModuleInterop": true, // Enables interoperability between CommonJS and ES Modules
+    "resolveJsonModule": true, // Allow importing JSON files
+    "isolatedModules": true // Ensure modules are treated as separate files
+  },
+  "include": ["next-env.d.ts", "**/*.js", "**/*.jsx"], // Files to include in the project context
+  "exclude": ["node_modules"] // Exclude node_modules directory
+}
